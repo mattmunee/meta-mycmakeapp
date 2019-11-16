@@ -4,14 +4,13 @@ LICENSE = "CLOSED"
 PR = "r0" 
 
 DEPENDS = ""
-
-SRC_URI = "git://github.com/mattmunee/CMakeCrossPlatform_HelloWorld.git;protocol=https;branch=master"
+FILESPATH = "/home/mattmunee/Desktop"
+SRC_URI = "file://CMakeCrossPlatform_HelloWorld"
+#SRC_URI = "git://github.com/mattmunee/CMakeCrossPlatform_HelloWorld.git;protocol=https;branch=master"
 SRCREV="${AUTOREV}"
-S = "${WORKDIR}/git/HelloWorld/Source"
+S = "${WORKDIR}/CMakeCrossPlatform_HelloWorld/HelloWorld"
 
 inherit pkgconfig cmake
 
-do_install() {
-    install -d ${D}${bindir}
-    install -m 0755 HelloWorld ${D}${bindir}
-}
+SOLIBS = ".so"
+FILES_SOLIBSDEV = ""

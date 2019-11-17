@@ -3,7 +3,7 @@ SECTION = "examples"
 LICENSE = "CLOSED" 
 PR = "r0" 
 
-DEPENDS = ""
+DEPENDS = "i2c-tools"
 FILESPATH = "/home/mattmunee/Desktop"
 SRC_URI = "file://CMakeCrossPlatform_HelloWorld"
 #SRC_URI = "git://github.com/mattmunee/CMakeCrossPlatform_HelloWorld.git;protocol=https;branch=master"

@@ -25,7 +25,7 @@ BBLAYERS ?= " \
 ```
 At the end of .../poky/build/conf/local.conf, add the mycmakeapp to the image installation:
 
-`IMAGE_INSTALL_append = " bbexample mycmakeapp"`
+`IMAGE_INSTALL_append = " mycmakeapp"`
 
 Build the mycmakeapp recipe
 
